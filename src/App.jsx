@@ -5,6 +5,7 @@ import SearchContainer from './Components/SearchContainer';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 import DealsContainer from './Components/DealsContainer';
+import PromotionContainer from './Components/PromotionContainer';
 import './App.css';
 
 function Layout() {
@@ -20,6 +21,7 @@ function Layout() {
           <NavbarContainer />
           <SearchContainer />
           <DealsContainer />
+          <PromotionContainer/>
         </>
       )}
       <Routes>

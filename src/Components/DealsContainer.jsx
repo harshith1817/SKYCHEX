@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PopularslistContainer from './PopularslistContainer';
+import FlagslistContainer from './FlagsListContainer';
 
 const Deals=styled.div`
 width:100%;
@@ -33,6 +34,18 @@ justify-content: center;    /* Centers text horizontally */
 font-weight:bold;
 `;
 
+const Planetickets=styled.div`
+width:70%;
+height:15rem;
+padding-top:2rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+padding-left:15%;
+`;
+
 function DealsContainer(){
     return(
         <Deals>
@@ -42,7 +55,7 @@ function DealsContainer(){
               </BoxContainer>
               <GreatDeals>Great deals on plane tickets</GreatDeals>
               <Planetickets>
-                
+                <FlagslistContainer/>
               </Planetickets>
         </Deals>
 
