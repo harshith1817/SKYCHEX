@@ -1,29 +1,42 @@
-import { useState } from 'react'
-import styled from 'styled-components';
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import NavbarContainer from './Components/NavbarContainer';
+import SearchContainer from './Components/SearchContainer';
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
+import DealsContainer from './Components/DealsContainer';
+import './App.css';
 
-
-const Navbar=styled.div`
-
-`;
-
-const NavImg=styled.div`
-
-`;
-
-function App() {
+function Layout() {
+  const location = useLocation();
+  
+  // Only show Navbar and SearchContainer on specific paths
+  const showNavbarAndSearch = location.pathname === '/';
 
   return (
-    <>
     <div>
-      <Navbar>
-        <NavImg>
-          <img src='' alt='NavImage'/>
-        </NavImg>
-      </Navbar>
+      {showNavbarAndSearch && (
+        <>
+          <NavbarContainer />
+          <SearchContainer />
+          <DealsContainer />
+        </>
+      )}
+      <Routes>
+        <Route path="/" element={<div></div>} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <Layout />
+    </Router>
+  );
+}
+
+export default App;
