@@ -1,5 +1,5 @@
 import React from 'react';
-import PopularsConatiner from "./Popularscontainer";
+import PopularsConatiner from './PopularsContainer';
 
 function PopularslistContainer(){
     return(
