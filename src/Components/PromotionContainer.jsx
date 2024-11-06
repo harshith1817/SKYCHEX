@@ -12,7 +12,6 @@ const Promo = styled.div`
 `;
 
 const HeadBox = styled.div`
-  padding-top: 1.5rem;
   width: 50%;
   text-align: center;
   color: #334c77;

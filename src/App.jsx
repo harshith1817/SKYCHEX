@@ -6,6 +6,8 @@ import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 import DealsContainer from './Components/DealsContainer';
 import PromotionContainer from './Components/PromotionContainer';
+import SearchResultContainer from './Components/SearchResultContainer';
+import FooterContainer from './Components/FooterContainer';
 import './App.css';
 
 function Layout() {
@@ -22,6 +24,8 @@ function Layout() {
           <SearchContainer />
           <DealsContainer />
           <PromotionContainer/>
+          <SearchResultContainer/>
+          <FooterContainer/>
         </>
       )}
       <Routes>
