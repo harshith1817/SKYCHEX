@@ -64,7 +64,7 @@ This is a project built using React to showcase web development skills, includin
 
 5. Push your changes to your fork:
    ```bash
-git push origin feature-name
+   git push origin feature-name
 
 6. Open a Pull Request (PR) from your branch to the original repository, describing the changes you made.
 
