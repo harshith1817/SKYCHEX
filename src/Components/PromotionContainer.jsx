@@ -14,7 +14,10 @@ const Promo = styled.div`
 const HeadBox = styled.div`
   width: 50%;
   text-align: center;
-  color: #334c77;
+  color: #334c77;  
+  @media (max-width: 480px) {
+    width:80%;
+  }
 `;
 
 const Head = styled.h2`

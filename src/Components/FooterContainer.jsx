@@ -18,7 +18,10 @@ width:100%;
 height:20%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  @media (max-width: 480px) {
+height:10%;
+  }
 `;
 
 const About=styled.div`
@@ -98,7 +101,7 @@ height:40%;
 width:40%;   
  @media (max-width: 480px) {
   text-align:center;
-width:60%;
+width:80%;
   }
 `;
 

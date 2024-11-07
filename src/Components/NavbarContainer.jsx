@@ -29,6 +29,9 @@ const NavImg = styled.div`
     top: 0;
     left: 0;
     z-index: -1;
+  }  
+  @media (max-width: 480px) {
+  height: 60%;
   }
 `;
 
@@ -95,11 +98,7 @@ const Login = styled.button`
   }
 
   @media (max-width: 480px) {
-    top: 8%;
-    left: 80%;
-    width: 5rem;
-    height: 1.5rem;
-    font-size: 0.8rem;
+    display:none;
   }
 `;
 
@@ -123,7 +122,7 @@ const Heading = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 1.2rem;
-    top: 25%;
+    margin-top: 10%;
   }
 `;
 
@@ -131,8 +130,6 @@ const Slogan = styled.p`
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
-  display: flex;
-  align-items: center;
   position: absolute;
   top: 48%;
   left: 50%;
@@ -147,7 +144,7 @@ const Slogan = styled.p`
 
   @media (max-width: 480px) {
     font-size: 0.9rem;
-    top: 40%;
+    margin-top: 15%;
   }
 `;
 
