@@ -2,3 +2,24 @@
     margin: 0;
     padding: 0;
 }
+
+.app{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #3f265d;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1a82b1;
+    border-radius: 0.25rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    opacity:1;
+  }

@@ -16,7 +16,7 @@ const SearchResultBox = styled.div`
 `;
 
 const SearchResult = styled.div`
-  width: 70%;
+  width: 80%;
   height: 36rem;
   display: flex;
   flex-direction: column;
