@@ -17,7 +17,7 @@ function Layout() {
   const showNavbarAndSearch = location.pathname === '/';
 
   return (
-    <div>
+    <div style="width=100%;">
       {showNavbarAndSearch && (
         <>
           <NavbarContainer />
