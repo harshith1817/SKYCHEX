@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { FaChevronDown } from "react-icons/fa";
+import { SlCalender } from "react-icons/sl";
 
 const Searchbar = styled.div`
   width: 70%;
@@ -60,6 +62,51 @@ height:3rem;
   font-weight:bold;
 `;
 
+const Details=styled.button`
+width:15%;
+height:100%;
+background-color:#f0f6f9;
+margin-left:0.5rem;
+border-radius:0.5rem;
+border:none;
+color:#002056;
+`;
+
+
+const PassengerDiv=styled.button`
+width:20%;
+height:100%;
+background-color:#f0f6f9;
+margin-left:0.5rem;
+border-radius:0.5rem;
+border:none;
+color:#002056;
+`;
+
+const DetailsP=styled.div`
+width:100%;
+height:10%;
+margin-top:5%;
+display:flex;
+`;
+
+const DetailsDiv=styled.div`
+width:100%;
+height:30%;
+margin-top:0.5rem;
+display:flex;
+`;
+
+const Search=styled.button`
+width:8%;
+height:100%;
+border-radius:0.5rem;
+border:none;
+background-color:#34bcf3;
+color:white;
+margin-left:0.5rem;
+`;
+
 function SearchContainer(){
     return(
 <>
@@ -67,7 +114,22 @@ function SearchContainer(){
       <Return>Return</Return>
       <Oneway>One way</Oneway>
     </Traveltype>
-    <Searchbar></Searchbar>
+    <Searchbar>
+      <DetailsP>
+      <p style={{ marginLeft: '3rem',color:'#747779'}}>From</p>
+      <p style={{ marginLeft: '9rem',color:'#747779'}}>To</p>
+      <p style={{ marginLeft: '9rem',color:'#747779'}}>Depart</p>
+      <p style={{ marginLeft: '19rem',color:'#747779'}}>Passengers and class</p>
+      </DetailsP>
+      <DetailsDiv>
+        <Details style={{ marginLeft: '3rem'}}>Gdansk(GDN)</Details>
+        <Details>Poznan(POZ)</Details>
+        <Details>Wed, Oct 18<SlCalender size={12} style={{ color:'#34bcf3',marginLeft: '2rem' }}/></Details>
+        <Details style={{ color:'#8c9092'}}>Return</Details>
+        <PassengerDiv>1 Passenger, Economy <FaChevronDown  size={11} style={{ marginLeft: '2rem' }}/></PassengerDiv>
+        <Search>Search</Search>
+      </DetailsDiv>
+    </Searchbar>
 </>
     );
 }

@@ -71,15 +71,18 @@ padding-right:1rem;
 `;
 
 const Firstnameinput=styled.input`
-
+border:none;
+border-radius:0.5rem;
 `;
 
 const Lastnameinput=styled.input`
-
+border:none;
+border-radius:0.5rem;
 `;
 
 const Phonenuminput=styled.input`
-
+border:none;
+border-radius:0.5rem;
 `;
 
 const Email=styled.p`
@@ -89,11 +92,13 @@ padding-left:2.5rem;
 `;
 
 const Emailinput=styled.input`
-
+border:none;
+border-radius:0.5rem;
 `;
 
 const Passwordinput=styled.input`
-
+border:none;
+border-radius:0.5rem;
 `;
 
 const Password=styled.p`
@@ -117,6 +122,19 @@ const Submit=styled.button`
 function Signup() {
   return (
     <SignupContainer>
+    <img 
+        src="https://raw.githubusercontent.com/harshith1817/SKYCHEX/refs/heads/main/src/assets/AirportBackground.png" 
+        alt="background" 
+        className='bg' 
+        style={{ 
+          position: 'fixed', 
+          width: '100%', 
+          height: '140%', 
+          objectFit: 'cover', 
+          zIndex: -1,
+          scale: 1.4
+        }}
+      />
       <HomeButtonContainer></HomeButtonContainer>
       <TitleWrapper>
         <TitleContainer/>
