@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import NavbarContainer from './Components/NavbarContainer';
 import SearchContainer from './Components/SearchContainer';
-import Signup from './Pages/Signup';
-import Login from './Pages/Login';
 import DealsContainer from './Components/DealsContainer';
 import PromotionContainer from './Components/PromotionContainer';
 import SearchResultContainer from './Components/SearchResultContainer';
 import FooterContainer from './Components/FooterContainer';
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
 import './App.css';
 
 function Layout() {

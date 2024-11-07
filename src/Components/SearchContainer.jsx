@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import { FaChevronDown } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 
+const Hide = styled.div`
+  @media (max-width: 480px) {
+  display:none;
+  }
+`;
 const Searchbar = styled.div`
   width: 70%;
   height: 10rem; // Adjusted height for better visibility
@@ -109,7 +114,7 @@ margin-left:0.5rem;
 
 function SearchContainer(){
     return(
-<>
+<Hide>
     <Traveltype>
       <Return>Return</Return>
       <Oneway>One way</Oneway>
@@ -130,7 +135,7 @@ function SearchContainer(){
         <Search>Search</Search>
       </DetailsDiv>
     </Searchbar>
-</>
+</Hide>
     );
 }
 

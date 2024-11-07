@@ -13,6 +13,10 @@ const SearchResultBox = styled.div`
   display: flex;
   justify-content: center; /* Centers the SearchResult horizontally */
   align-items: center;
+
+  @media (max-width: 480px) {
+  display:none;
+  }
 `;
 
 const SearchResult = styled.div`

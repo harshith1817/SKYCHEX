@@ -5,8 +5,16 @@ import TitleContainer from './TitleContainer';
 
 const Navbar = styled.div`
   width: 100%;
-  height: 17rem; // Original height
+  height: 17rem;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 15rem; // Slightly smaller for tablet screens
+  }
+
+  @media (max-width: 480px) {
+    height: 12rem; // Even smaller for mobile screens
+  }
 `;
 
 const NavImg = styled.div`
@@ -24,27 +32,34 @@ const NavImg = styled.div`
   }
 `;
 
-
 const Signup = styled.button`
   width: 6.5rem;
   height: 2rem;
   z-index: 1;
   color: white;
   display: flex;
-  align-items: center;       /* Centers text vertically */
-  justify-content: center;    /* Centers text horizontally */
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 80%;
   transform: translate(-50%, -50%);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  background-color: transparent;  /* Makes the background transparent */
-  border: 1px solid white;        /* Adds a white border */
-  cursor: pointer;                /* Changes the cursor to pointer on hover */
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: adds a subtle hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  @media (max-width: 768px) {
+  display:none;
+  }
+
+  @media (max-width: 480px) {
+display:none;
   }
 `;
 
@@ -54,25 +69,39 @@ const Login = styled.button`
   font-weight: bold;
   color: #3f5780;
   display: flex;
-  align-items: center;       /* Centers text vertically */
-  justify-content: center;    /* Centers text horizontally */
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 15%;
   left: 88%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-color: white;    /* Adds a background to contrast with the text color */
+  background-color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   border: none;
-  cursor: pointer;            /* Changes the cursor to pointer on hover */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: #e0e7ff; /* Lightens background on hover */
+    background-color: #e0e7ff;
+  }
+
+  @media (max-width: 768px) {
+    top: 10%;
+    left: 85%;
+    width: 6rem;
+    height: 1.8rem;
+  }
+
+  @media (max-width: 480px) {
+    top: 8%;
+    left: 80%;
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
   }
 `;
-
 
 const Heading = styled.h1`
   font-size: 2.5rem;
@@ -85,6 +114,17 @@ const Heading = styled.h1`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+    top: 30%;
+    margin-top: 4%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    top: 25%;
+  }
 `;
 
 const Slogan = styled.p`
@@ -98,6 +138,17 @@ const Slogan = styled.p`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    top: 45%;
+    margin-top: 4%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    top: 40%;
+  }
 `;
 
 function NavbarContainer() {
@@ -107,11 +158,11 @@ function NavbarContainer() {
     <Navbar>
       <NavImg>
         <img
-          src='https://raw.githubusercontent.com/harshith1817/SKYCHEX/refs/heads/main/src/assets/nav.jpg'
-          alt='NavImage'
+          src="https://raw.githubusercontent.com/harshith1817/SKYCHEX/refs/heads/main/src/assets/nav.jpg"
+          alt="NavImage"
         />
       </NavImg>
-      <TitleContainer></TitleContainer>
+      <TitleContainer />
       <Signup onClick={() => navigate('/signup')}>Sign Up</Signup>
       <Login onClick={() => navigate('/login')}>Log In</Login>
       <Heading>Let's Book Your Flight</Heading>

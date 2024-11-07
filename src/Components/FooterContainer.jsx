@@ -27,7 +27,10 @@ width:40%;
 display:flex;
 flex-direction:column;
 align-items:center;
-padding-top:2rem;
+padding-top:2rem; 
+ @media (max-width: 480px) {
+width:100%;
+  }
 `;
 
 const Book=styled.div`
@@ -36,7 +39,10 @@ width:20%;
 color:white;
   display: flex;
   justify-content: center;
-  flex-direction:column;
+  flex-direction:column;  
+  @media (max-width: 480px) {
+  display:none;
+  }
 `;
 
 const Bookings=styled.div`
@@ -46,6 +52,9 @@ color:white;
   display: flex;
   justify-content: center;
   flex-direction:column;
+    @media (max-width: 480px) {
+  display:none;
+  }
 `;
 const Company=styled.div`
 height:100%;
@@ -54,6 +63,9 @@ color:white;
   display: flex;
   justify-content: center;
   flex-direction:column;
+    @media (max-width: 480px) {
+  display:none;
+  }
 `;
 
 const Heading=styled.h2`
@@ -73,6 +85,9 @@ padding-left:9rem;
     width: 50%;
     height: 100%;
   }
+  @media (max-width: 480px) {
+padding-left:5rem;
+  }
 `;
 
 const Desctiption=styled.div`
@@ -80,7 +95,11 @@ padding-top:0.5rem;
 padding-bottom:0.5rem;
 color:white;
 height:40%;
-width:40%;
+width:40%;   
+ @media (max-width: 480px) {
+  text-align:center;
+width:60%;
+  }
 `;
 
 const SocialMedia=styled.div`
