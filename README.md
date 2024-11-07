@@ -5,7 +5,6 @@
 ## Description
 This is a project built using React to showcase web development skills, including interactive features with JavaScript and responsive design using HTML and CSS.
 
----
 
 ## Technologies and Tools Used
 
@@ -25,7 +24,7 @@ This is a project built using React to showcase web development skills, includin
   - **Visual Studio Code**: Code editor for development.
   - **Chrome DevTools**: Debugging tools used in the browser.
 
----
+
 ## Installation
 
 1. Clone the repository:
@@ -34,15 +33,15 @@ This is a project built using React to showcase web development skills, includin
    
 2. Navigate to the project directory
    ```bash
-cd SKYCHEX
+   cd SKYCHEX
 
 3. Install all necessary dependencies
    ```bash
-npm install
+   npm install
 
 4. Run the development server
    ```bash
-npm run dev
+   npm run dev
 
 ## Usage
 - After running the development server with `npm start`, open your browser and go to http://localhost:5173 to view the application.
@@ -53,15 +52,15 @@ npm run dev
 
 2. Clone your forked repository to your local machine:
    ```bash
-git clone https://github.com/harshith1817/SKYCHEX.git
+   git clone https://github.com/harshith1817/SKYCHEX.git
 
 3. Create a new branch for your feature or bug fix:
    ```bash
-git checkout -b feature-name
+    git checkout -b feature-name
 
 4. Make changes to the code and commit your changes:
    ```bash
-git commit -m "Description of changes"
+   git commit -m "Description of changes"
 
 5. Push your changes to your fork:
    ```bash
