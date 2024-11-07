@@ -33,31 +33,40 @@ This is a project built using React to showcase web development skills, includin
    git clone https://github.com/harshith1817/SKYCHEX.git
    
 2. Navigate to the project directory
+   ```bash
 cd SKYCHEX
 
-# Install all necessary dependencies
+3. Install all necessary dependencies
+   ```bash
 npm install
 
-# Run the development server
+4. Run the development server
+   ```bash
 npm run dev
 
-# Usage
-# After running the development server with `npm start`, open your browser and go to http://localhost:3000 to view the application.
-# You should see the project’s homepage or the main feature page.
+## Usage
+- After running the development server with `npm start`, open your browser and go to http://localhost:5173 to view the application.
+- You should see the project’s homepage or the main feature page.
 
 # Contribution
-# Fork this repository to your GitHub account.
-# Clone your forked repository to your local machine:
-git clone https://github.com/your-username/project-name.git
+1. Fork this repository to your GitHub account.
 
-# Create a new branch for your feature or bug fix:
+2. Clone your forked repository to your local machine:
+   ```bash
+git clone https://github.com/harshith1817/SKYCHEX.git
+
+3. Create a new branch for your feature or bug fix:
+   ```bash
 git checkout -b feature-name
 
-# Make changes to the code and commit your changes:
+4. Make changes to the code and commit your changes:
+   ```bash
 git commit -m "Description of changes"
 
-# Push your changes to your fork:
+5. Push your changes to your fork:
+   ```bash
 git push origin feature-name
 
-# Open a Pull Request (PR) from your branch to the original repository, describing the changes you made.
-# Ensure your code follows the project’s coding standards and passes any automated tests.
+6. Open a Pull Request (PR) from your branch to the original repository, describing the changes you made.
+
+7. Ensure your code follows the project’s coding standards and passes any automated tests.
