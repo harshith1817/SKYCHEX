@@ -44,7 +44,7 @@ This is a project built using React to showcase web development skills, includin
    npm run dev
 
 ## Usage
-- After running the development server with `npm start`, open your browser and go to http://localhost:5173 to view the application.
+- After running the development server with `npm run dev`, open your browser and go to http://localhost:5173 to view the application.
 - You should see the project’s homepage or the main feature page.
 
 # Contribution
